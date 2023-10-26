@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TaskPro</title>
+    <link rel="icon" type="image/png" href="/img/taskpro-icon.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo-mobile">
+            <img src="img/taskpro.png" alt="Logo" class="logo">
+        </div>
+        <div class="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <ul class="menu-list">
+            <li class="switch">
+                <label class="switch-label">
+                    <input type="checkbox" class="modoSwitch">
+                    <span class="slider"></span>
+                    <span class="modo-text left active">LIGHT</span>
+                    <span class="modo-text right">DARK</span>
+                </label>
+            </li>
+            <li class="profile">
+                <i class="fa-solid fa-user"></i>
+            </li>
+        </ul>
+    </header>
+
+    <div class="nav-menu">
+        <ul>
+            <li class="switch">
+                <label class="switch-label">
+                    <input type="checkbox" class="modoSwitch">
+                    <span class="slider"></span>
+                    <span class="modo-text left active">LIGHT</span>
+                    <span class="modo-text right">DARK</span>
+                </label>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="container">
+        <div class="">
+            <div class="image">
+                <h1 class="hello">HELLO!</h1>
+                <p class="text-justify">Welcome to TaskPro Kanban Board! We're thrilled to have you onboard. With our
+                    platform, you can
+                    efficiently manage your projects, collaborate with your team, and track your tasks effortlessly.</p>
+            </div>
+        </div>
+        <div class="">
+            <form action="/project.html" class="form-login">
+                <h2 class="text-login">Login</h2>
+                <input type="text" id="username" name="username" placeholder="Username" required class="input-login">
+                <input type="password" id="password" name="password" placeholder="Password" required
+                    class="input-login">
+                <button type="submit">Login</button>
+                <br>
+                <hr class="separador"><br>
+                <img src="img/google-login.png" class="google-login" alt="google-login">
+                <a href="register.html" class="text-center text-color">Or Sing Up Using</a>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/c1950bcd45.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="js/mobileMenu.js"></script>
+</body>
+
+</html>

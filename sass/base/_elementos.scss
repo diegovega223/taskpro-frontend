@@ -1,0 +1,79 @@
+@use "variables" as v;
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: v.$fuente-principal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  background-color: v.$color-blanco;
+  color: v.$color-blanco;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  transition: background-color 0.5s;
+}
+
+body.dark {
+  background-color: v.$color-bg-dark;
+}
+
+a {
+  text-decoration: none;
+  color: v.$color-negro;
+}
+
+h1,
+h2 {
+  font-size: 2.4rem;
+  color: v.$color-secundario;
+  margin: 0;
+}
+
+body.dark h1,
+body.dark h2 {
+  color: v.$color-principal;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  margin-bottom: 1.2rem;
+  color: v.$color-negro;
+}
+
+body.dark p {
+  color: v.$color-blanco;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: v.$color-secundario;
+  color: v.$color-blanco;
+}
+
+body.dark button {
+  background-color: v.$color-principal;
+  color: v.$color-negro;
+}
+
+button:hover {
+  background-color: v.$color-principal;
+}
+
+body.dark button:hover {
+  background-color: v.$color-bg-dark;
+  color: v.$color-blanco;
+}

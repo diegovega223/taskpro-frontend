@@ -1,0 +1,6 @@
+
+Comando para compliar sass:
+sass --watch sass/app.scss css/styles.css
+
+
+
