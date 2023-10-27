@@ -1,0 +1,14 @@
+@use '../base' as v;
+@use '../mixins' as m;
+
+.container-create-project{
+@include m.grid-columns(2);
+border: .1rem solid v.$color-gris-claro;
+margin: 2rem;
+.column{
+    border: .1rem solid v.$color-gris-claro;
+margin: 2rem;
+}
+
+
+}
