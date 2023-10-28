@@ -2,7 +2,7 @@
 @use "../mixins" as m;
 
 .navbar {
-  width: 100%;
+  width: 100vw; 
   display: flex;
   margin-bottom: 0;
   justify-content: space-between;
@@ -12,8 +12,18 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 3;
+  z-index: 5;
   border-bottom: 0.1rem solid v.$color-gris;
+}
+
+@media (max-width: v.$mobile) {
+  .navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 5;
+  }
 }
 
 .profile {
@@ -66,12 +76,7 @@
   cursor: pointer;
 }
 
-@include m.logo-size(
-  v.$logo-desktop,
-  v.$logo-large,
-  v.$logo-medium,
-  v.$logo-small
-);
+@include m.logo-size(v.$logo-desktop, v.$logo-large, v.$logo-medium, v.$logo-small);
 
 .notification-icon {
   color: v.$color-principal;

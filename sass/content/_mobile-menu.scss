@@ -24,17 +24,14 @@
     top: -100%;
     flex-direction: column;
     background-color: v.$color-negro;
-    width: 100%;
+    width: 100vw;
     text-align: center;
     transition: 0.5s;
     border-bottom: 0.1rem solid v.$color-gris;
   }
 
   body.mobile .nav-menu {
-    top: 8rem;
-    hr {
-      color: v.$color-principal;
-    }
+    top: 8rem;  
   }
 
   ul {
@@ -45,6 +42,7 @@
     cursor: pointer;
     color: v.$color-principal;
     margin-right: 10%;
+    width: 10rem !important;
   }
 }
 

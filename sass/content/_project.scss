@@ -11,7 +11,6 @@
 .container-project {
   @include m.grid-columns(2, 0);
   border: 0.1rem solid v.$color-gris-claro;
-
   padding: 2rem;
   width: 85%;
   height: 45rem;

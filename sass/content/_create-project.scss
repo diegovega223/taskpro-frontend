@@ -112,6 +112,12 @@ body.dark .assigned-user-project {
 }
 
 body.dark .input-project {
+  option {
+    color: v.$color-blanco;
+  }
+}
+
+body.dark .input-project {
   background-color:  v.$color-bg-dark;
   color:  v.$color-blanco;
 }
