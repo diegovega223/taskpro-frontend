@@ -37,6 +37,15 @@ h2 {
   margin: 0;
 }
 
+h3 {
+  color: v.$color-gris-icono;
+  margin: 0;
+}
+
+body.dark h3 {
+  color: v.$color-blanco;
+}
+
 body.dark h1,
 body.dark h2 {
   color: v.$color-principal;

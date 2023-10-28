@@ -35,6 +35,15 @@ h2 {
   margin: 0;
 }
 
+h3 {
+  color: #434343;
+  margin: 0;
+}
+
+body.dark h3 {
+  color: #ffffff;
+}
+
 body.dark h1,
 body.dark h2 {
   color: #fac710;
@@ -93,6 +102,11 @@ body.dark button:hover {
   margin: 2rem;
 }
 
+.align-items {
+  display: flex;
+  align-items: center;
+}
+
 .m-1 {
   margin: 1rem;
 }
@@ -144,6 +158,16 @@ body.dark .text-color {
 }
 body.dark .title {
   color: #ffffff;
+}
+
+::selection {
+  color: #333333;
+  background: #f3721f;
+}
+
+body.dark ::selection {
+  color: #333333;
+  background: #fac710;
 }
 
 #logo {
@@ -204,6 +228,11 @@ body.dark .title {
   align-items: center;
 }
 
+.profile img {
+  width: 5rem;
+  height: 5rem;
+}
+
 .menu-list {
   list-style: none;
   display: flex;
@@ -220,7 +249,7 @@ body.dark .title {
   cursor: pointer;
 }
 
-@media (min-width: 120rem) {
+@media (max-width: 126.4rem) {
   .navbar .logo {
     width: 20rem;
     padding-left: 1.5rem;
@@ -396,13 +425,13 @@ html {
   display: flex;
   justify-content: center;
   margin-top: 12rem;
-  height: 70rem;
+  height: 60rem;
 }
 
 .image {
-  height: 100%;
+  height: 60rem;
   background-image: url("/img/login_img.png");
-  background-size: cover;
+  background-size: 60rem 100%;
   max-width: 53rem;
   border-bottom: 0.2rem solid #c25b19;
 }
@@ -415,7 +444,7 @@ body.dark .image {
 .form-login {
   width: 60rem;
   border: 0.1rem solid #ccc;
-  height: 70rem;
+  height: 60rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -435,8 +464,8 @@ body.dark .form-login {
 }
 
 body.dark .input-login {
+  background-color: #2e2e2e;
   color: #ffffff;
-  background-color: #ccc;
 }
 
 button {
@@ -483,8 +512,8 @@ body.dark .google-login {
 }
 
 .text-login {
-  font-size: 3.5rem;
-  font-weight: lighter;
+  font-size: 4rem;
+  font-weight: 300;
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -498,7 +527,7 @@ body.dark .google-login {
 
 @media (max-width: 48rem) {
   .container {
-    margin-top: 18rem;
+    margin-top: 13rem;
     flex-direction: column;
     padding-bottom: 10rem;
   }
@@ -506,11 +535,11 @@ body.dark .google-login {
     max-width: 100%;
     height: 30rem;
     margin-top: 23rem;
-    background-size: 100%;
+    background-size: 100% 30rem;
   }
   .form-login {
     width: 100%;
-    border-top: 0.2rem solid #c25b19;
+    border-bottom: 0.2rem solid #c25b19;
     padding-top: 2rem;
   }
   button {
@@ -569,7 +598,8 @@ body.dark .input-2-col {
 
 body.dark .input-1-col,
 body.dark .input-2-col {
-  background-color: #ccc;
+  background-color: #2e2e2e;
+  color: #ffffff;
 }
 
 .register .text-login {
@@ -701,7 +731,6 @@ body.mobile .mobile-menu .bar:nth-child(3) {
 .content-container {
   display: flex;
   justify-content: center;
-  align-items: center;
   height: 60rem;
   width: 100%;
 }
@@ -711,9 +740,8 @@ body.mobile .mobile-menu .bar:nth-child(3) {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 0;
   border: 0.1rem solid #ccc;
-  margin: auto;
   padding: 2rem;
-  width: 70%;
+  width: 85%;
   height: 45rem;
 }
 
@@ -889,16 +917,208 @@ body.dark .circle {
   color: #333333;
 }
 
+.container-new-project {
+  height: 65rem;
+}
+
 .container-create-project {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
   border: 0.1rem solid #ccc;
-  margin: 2rem;
+  margin: auto 3rem;
+  padding: 2rem 2rem;
 }
 .container-create-project .column {
   border: 0.1rem solid #ccc;
-  margin: 2rem;
+  margin: 2rem 0.3rem;
+}
+
+body.dark .container-create-project {
+  background-color: #333333;
+  border: 0.1rem solid #444444;
+}
+
+.project-data {
+  padding: 2rem;
+}
+
+body.dark .project-data {
+  border: 0.1rem solid #434343;
+}
+
+.estimated-project {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+.estimated-project .material-icons {
+  color: #434343;
+}
+
+.assigned-user-project-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  padding: 2rem;
+}
+.assigned-user-project-container .column {
+  border: none;
+}
+
+body.dark .assigned-user-project-container {
+  border: 0.1rem solid #444444;
+}
+
+.letter-role {
+  font-size: 2.5rem;
+  font-weight: 400;
+  height: 4rem;
+  width: 4rem;
+  color: #f3721f;
+  text-align: center;
+  align-items: center;
+}
+
+body.dark .letter-role {
+  color: #fac710;
+}
+
+.assing-box {
+  border: 0.1rem solid #ccc;
+  min-height: 30rem;
+  height: auto;
+  width: 30rem;
+}
+
+body.dark .assing-box {
+  border: 0.1rem solid #444444;
+  background-color: #2e2e2e;
+}
+
+.assigned-user-project {
+  display: flex;
+  height: 3.5rem;
+  padding: 1rem;
+  align-items: center;
+  align-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  background-color: #f2f2f2;
+  border: 0.1rem solid #ccc;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.assigned-user-project .material-icons {
+  color: #f3721f;
+  font-size: 3rem;
+  margin-left: 3rem;
+}
+
+body.dark .assigned-user-project {
+  background-color: #444444;
+  border: 0.1rem solid #333333;
+}
+
+.assigned-user-project:hover {
+  transform: scale(1.1);
+}
+
+.input-project {
+  width: 95%;
+  padding: 1rem;
+  margin: 0.5rem auto;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.4rem;
+}
+.input-project option {
+  color: #333333;
+}
+
+body.dark .input-project {
+  background-color: #2e2e2e;
+  color: #ffffff;
+}
+
+textarea.input-project {
+  resize: none;
+  height: 15rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.custom-date-input {
+  background-color: #ffffff;
+  color: #333333;
+  width: 70%;
+  padding: 1rem;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.4rem;
+  font-family: "Roboto", sans-serif;
+  color: #444444;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+body.dark .custom-date-input {
+  background-color: #2e2e2e;
+  color: #ffffff;
+}
+
+.create-button {
+  display: flex;
+  justify-content: right;
+}
+.create-button button {
+  height: 4rem;
+}
+
+@media (max-width: 48rem) {
+  .container-create-project {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-align: center;
+  }
+  .container-create-project .column {
+    margin: 0;
+  }
+  .column.project-data,
+  .column.assigned-user-project-container {
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+  .estimated-project {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+  }
+  .estimated-project div.column {
+    padding: auto;
+  }
+  .assing-box {
+    margin: auto;
+  }
+  .assigned-user-project-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+    text-align: center;
+    margin: 0;
+  }
+  .custom-date-input {
+    margin: 1rem auto;
+  }
+  .column.create-button {
+    margin: 0;
+  }
+  .column.create-button button {
+    height: 8rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

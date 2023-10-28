@@ -4,7 +4,6 @@
 .content-container {
   display: flex;
   justify-content: center;
-  align-items: center;
   height: 60rem;
   width: 100%;
 }
@@ -12,9 +11,9 @@
 .container-project {
   @include m.grid-columns(2, 0);
   border: 0.1rem solid v.$color-gris-claro;
-  margin: auto;
+
   padding: 2rem;
-  width: 70%;
+  width: 85%;
   height: 45rem;
 }
 

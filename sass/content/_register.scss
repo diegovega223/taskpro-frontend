@@ -37,7 +37,8 @@ body.dark .input-2-col {
 
 body.dark .input-1-col,
 body.dark .input-2-col {
-  background-color: v.$color-gris-claro;
+  background-color: v.$color-bg-dark;
+  color: v.$color-blanco;
 }
 
 .register .text-login {

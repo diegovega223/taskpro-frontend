@@ -17,6 +17,11 @@
   margin: 2rem;
 }
 
+.align-items {
+  display: flex;
+  align-items: center;
+}
+
 .m-1 {
   margin: 1rem;
 }
@@ -70,3 +75,14 @@ body.dark .text-color {
 body.dark .title {
   color: v.$color-blanco;
 }
+
+::selection {
+  color: v.$color-negro;
+  background: v.$color-secundario;
+}
+
+body.dark ::selection {
+  color: v.$color-negro;
+  background: v.$color-principal;
+}
+

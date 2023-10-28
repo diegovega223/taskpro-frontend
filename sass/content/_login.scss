@@ -10,13 +10,13 @@ html {
   display: flex;
   justify-content: center;
   margin-top: 12rem;
-  height: 70rem;
+  height: 60rem;
 }
 
 .image {
-  height: 100%;
+  height: 60rem;
   background-image: url("/img/login_img.png");
-  background-size: cover;
+  background-size: 60rem 100%;
   max-width: 53rem;
   border-bottom: 0.2rem solid v.$color-border-color;
 }
@@ -29,7 +29,7 @@ body.dark .image {
 .form-login {
   width: 60rem;
   border: 0.1rem solid v.$color-gris-claro;
-  height: 70rem;
+  height: 60rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,12 +45,12 @@ body.dark .form-login {
   padding: 1rem;
   margin: 0.5rem auto;
   border: 0.1rem solid v.$color-gris-claro;
-  border-radius: .4rem;
+  border-radius: 0.4rem;
 }
 
 body.dark .input-login {
+  background-color: v.$color-bg-dark;
   color: v.$color-blanco;
-  background-color: v.$color-gris-claro;
 }
 
 button {
@@ -97,8 +97,8 @@ body.dark .google-login {
 }
 
 .text-login {
-  font-size: 3.5rem;
-  font-weight: lighter;
+  font-size: 4rem;
+  font-weight: 300;
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -112,7 +112,7 @@ body.dark .google-login {
 
 @media (max-width: v.$mobile) {
   .container {
-    margin-top: 18rem;
+    margin-top: 13rem;
     flex-direction: column;
     padding-bottom: 10rem;
   }
@@ -121,12 +121,13 @@ body.dark .google-login {
     max-width: 100%;
     height: 30rem;
     margin-top: 23rem;
-    background-size: 100%;
+
+    background-size: 100% 30rem;
   }
 
   .form-login {
     width: 100%;
-    border-top: 0.2rem solid v.$color-border-color;
+    border-bottom: 0.2rem solid v.$color-border-color;
     padding-top: 2rem;
   }
 
@@ -137,7 +138,7 @@ body.dark .google-login {
   }
   .input-login {
     height: 3.5rem;
-    padding: .5rem;
+    padding: 0.5rem;
     font-size: 2rem;
     width: 30rem !important;
   }
@@ -147,7 +148,7 @@ body.dark .google-login {
     width: 90%;
   }
 
-  .hello{
+  .hello {
     font-size: 6rem;
   }
 }
