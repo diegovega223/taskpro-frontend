@@ -75,6 +75,7 @@ body.dark .kanban-board {
     background-color: v.$color-blanco-gris;
     border: 0.1rem solid v.$color-gris-claro;
     margin-bottom: 0.5rem;
+    cursor: pointer;
     .header-task {
         background-color: v.$color-secundario;
         padding: 1rem;
@@ -102,7 +103,7 @@ body.dark .kanban-board {
 }
 
 body.dark .task-card {
-    background-color: v.$color-bg-dark;
+    background-color: v.$color-negro;
     border: 0.1rem solid v.$color-gris;
     .header-task {
         background-color: v.$color-principal;
@@ -112,4 +113,8 @@ body.dark .task-card {
         color: v.$color-blanco;
         border-bottom: 0.1rem solid v.$color-gris;
     }
+}
+
+.task-content.collapsed .body-task {
+    display: none;
 }

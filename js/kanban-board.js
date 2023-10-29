@@ -12,3 +12,16 @@ document.addEventListener('DOMContentLoaded', function () {
       });
   });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const taskCards = document.querySelectorAll('.task-card');
+
+  taskCards.forEach((card) => {
+      const header = card.querySelector('.header-task');
+      const content = card.querySelector('.task-content');
+
+      header.addEventListener('click', () => {
+          content.classList.toggle('collapsed');
+      });
+  });
+});

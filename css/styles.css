@@ -1267,6 +1267,7 @@ body.dark .kanban-board .done {
   background-color: #f2f2f2;
   border: 0.1rem solid #ccc;
   margin-bottom: 0.5rem;
+  cursor: pointer;
 }
 .task-card .header-task {
   background-color: #f3721f;
@@ -1294,7 +1295,7 @@ body.dark .kanban-board .done {
 }
 
 body.dark .task-card {
-  background-color: #2e2e2e;
+  background-color: #333333;
   border: 0.1rem solid #444444;
 }
 body.dark .task-card .header-task {
@@ -1304,6 +1305,10 @@ body.dark .task-card .header-task {
 body.dark .task-card .body-task {
   color: #ffffff;
   border-bottom: 0.1rem solid #444444;
+}
+
+.task-content.collapsed .body-task {
+  display: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
