@@ -41,7 +41,7 @@
     }
     &:hover {
       .edit-button {
-        background: v.$color-principal;;
+        background: v.$color-principal;
         .material-icons {
           color: v.$color-blanco;
         }
@@ -80,7 +80,7 @@ body.dark .task-list {
     }
     &:hover {
       .edit-button {
-        background: v.$color-bg-dark;;
+        background: v.$color-bg-dark;
         .material-icons {
           color: v.$color-principal;
         }
@@ -94,12 +94,22 @@ body.dark .task-list {
   ul li:nth-child(even) {
     background-color: v.$color-bg-dark;
     &:hover {
-        .edit-button {
-          background: v.$color-negro;
-          .material-icons {
-            color: v.$color-principal;
-          }
+      .edit-button {
+        background: v.$color-negro;
+        .material-icons {
+          color: v.$color-principal;
         }
       }
+    }
+  }
+}
+
+@media (max-width: v.$mobile) {
+  .task-list {
+    margin-left: 0;
+    margin-right: 0;
+    span{
+      padding-left: 0.8rem;
+    }
   }
 }

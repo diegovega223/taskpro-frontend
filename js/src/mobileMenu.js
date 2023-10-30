@@ -7,5 +7,3 @@ function mobileMenu() {
 }
 
 menu.addEventListener("click", mobileMenu);
-
-

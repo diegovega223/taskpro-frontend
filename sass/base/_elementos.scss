@@ -75,7 +75,8 @@ body.dark {
     color: v.$color-blanco;
   }
 
-  button {
+  button,
+  .button {
     background-color: v.$color-principal;
     color: v.$color-negro;
   }

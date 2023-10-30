@@ -3,16 +3,14 @@
 
 .container-kanban-board {
   font-size: 1.2rem;
-  padding-bottom: 3rem;
-  padding-left: 8rem;
   &::-webkit-scrollbar {
     display: none;
   }
-
   &::-webkit-scrollbar-horizontal {
     display: none;
   }
 }
+
 
 .header-kanban-board {
   position: relative;
@@ -27,8 +25,8 @@ body.dark .header-kanban-board {
 .header-kanban-board,
 .kanban-board {
   @include m.grid-columns(3, 0);
-  width: 75rem;
-  margin: 1rem;
+  width: 70%;
+  margin: auto;
   text-align: center;
 }
 
@@ -60,7 +58,6 @@ body.dark .header-kanban-board {
     border-bottom: 0.1rem solid v.$color-gris-claro;
     border-right: 0.1rem solid v.$color-gris-claro;
   }
-
 }
 
 body.dark .kanban-board {
@@ -82,7 +79,6 @@ body.dark .kanban-board {
 .task-card {
   background-color: v.$color-blanco-gris;
   border: 0.1rem solid v.$color-gris-claro;
-  margin-bottom: 0.5rem;
   cursor: pointer;
   .header-task {
     background-color: v.$color-secundario;
