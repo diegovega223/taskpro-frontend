@@ -15,14 +15,14 @@ html {
 
 .image {
   height: 60rem;
-  background-image: url("/img/login_img.png");
+  background-image: url("/public/img/login_img.png");
   background-size: 60rem 100%;
   max-width: 53rem;
   border-bottom: 0.2rem solid v.$color-border-color;
 }
 
 body.dark .image {
-  background-image: url("/img/login_img_dark.png");
+  background-image: url("/public/img/login_img_dark.png");
   border-bottom: 0.2rem solid v.$color-gris;
 }
 

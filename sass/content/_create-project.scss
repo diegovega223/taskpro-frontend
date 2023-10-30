@@ -7,7 +7,6 @@
 
 .container-create-project {
   @include m.grid-columns(2);
-  border: 0.1rem solid v.$color-gris-claro;
   margin: auto 3rem;
   padding: 2rem 2rem;
   .column {
@@ -42,6 +41,7 @@ body.dark .project-data {
     border: none;
   }
   padding: 2rem;
+  justify-content: center;
 }
 
 body.dark .assigned-user-project-container {
@@ -82,22 +82,28 @@ body.dark .assing-box {
   @include m.grid-columns(4);
   background-color: v.$color-blanco-gris;
   border: 0.1rem solid v.$color-gris-claro;
+  cursor: pointer;
   .material-icons {
     color: v.$color-secundario;
     font-size: 3rem;
     margin-left: 3rem;
+    transition: transform 0.3s;
   }
-  cursor: pointer;
-  transition: transform 0.3s;
+  .material-icons:hover {
+    transform: scale(1.3);
+  }
+}
+
+.assigned-user-project:hover {
+  border: 0.1rem solid v.$color-secundario;
 }
 
 body.dark .assigned-user-project {
   background-color: v.$color-gris;
   border: 0.1rem solid v.$color-negro;
-}
-
-.assigned-user-project:hover {
-  transform: scale(1.1);
+  &:hover {
+    border: 0.1rem solid v.$color-principal;
+  }
 }
 
 .input-project {
@@ -118,8 +124,8 @@ body.dark .input-project {
 }
 
 body.dark .input-project {
-  background-color:  v.$color-bg-dark;
-  color:  v.$color-blanco;
+  background-color: v.$color-bg-dark;
+  color: v.$color-blanco;
 }
 
 textarea.input-project {
@@ -142,13 +148,13 @@ textarea.input-project {
 }
 
 body.dark .custom-date-input {
-  background-color:  v.$color-bg-dark;
+  background-color: v.$color-bg-dark;
   color: v.$color-blanco;
 }
 
 .create-button {
   display: flex;
-  justify-content: right;
+  justify-content: center;
   button {
     height: 4rem;
   }

@@ -20,11 +20,6 @@ body {
   line-height: 1.5;
   transition: background-color 0.5s;
 }
-
-body.dark {
-  background-color: v.$color-bg-dark;
-}
-
 a {
   text-decoration: none;
   color: v.$color-negro;
@@ -42,15 +37,6 @@ h3 {
   margin: 0;
 }
 
-body.dark h3 {
-  color: v.$color-blanco;
-}
-
-body.dark h1,
-body.dark h2 {
-  color: v.$color-principal;
-}
-
 h2 {
   font-size: 2rem;
 }
@@ -58,10 +44,6 @@ h2 {
 p {
   margin-bottom: 1.2rem;
   color: v.$color-negro;
-}
-
-body.dark p {
-  color: v.$color-blanco;
 }
 
 li {
@@ -73,16 +55,43 @@ button {
   color: v.$color-blanco;
 }
 
-body.dark button {
-  background-color: v.$color-principal;
-  color: v.$color-negro;
-}
-
 button:hover {
   background-color: v.$color-principal;
 }
 
-body.dark button:hover {
+body.dark {
   background-color: v.$color-bg-dark;
-  color: v.$color-blanco;
+  h1,
+  h2 {
+    color: v.$color-principal;
+  }
+
+  h3 {
+    color: v.$color-blanco;
+  }
+
+  p {
+    color: v.$color-blanco;
+  }
+
+  button {
+    background-color: v.$color-principal;
+    color: v.$color-negro;
+  }
+
+  button:hover {
+    background-color: v.$color-bg-dark;
+    color: v.$color-blanco;
+  }
+
+  input[type="date"]::-webkit-calendar-picker-indicator,
+  input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+  }
+
+  input,
+  textarea,
+  select {
+    border: 0.1rem solid v.$color-gris;
+  }
 }

@@ -1,0 +1,60 @@
+Paso 1: Configurar Webpack
+
+1. Iniciar un proyecto de Node.js si aún no lo has hecho:
+
+   npm init -y
+
+2. Instalar Webpack y Webpack CLI de forma local:
+
+   npm install --save-dev webpack webpack-cli
+   
+
+3. Crear un archivo de configuración de Webpack llamado `webpack.config.js` en la raíz del proyecto.
+En webpack.config.js:
+
+const path = require('path');
+
+module.exports = {
+  entry: './js/src/app.js',
+  output: {
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'js/dist'),
+  },
+};
+
+Paso 2: Configurar módulos y dependencias
+
+En tus archivos de módulo (`app.js`, `darkmode.js`, `kanban-board.js`, `mobileMenu.js`), utiliza la sintaxis de módulos 
+ES6 para importar y exportar funciones y variables según sea necesario:
+
+
+En App.js: 
+
+import { enableDarkMode } from './darkmode';
+import { setupMobileMenu } from './mobileMenu';
+
+enableDarkMode();
+setupMobileMenu();
+
+
+Paso 3: Compilar con Webpack
+
+Ejecutar Webpack para compilar tus módulos en un solo archivo. Utiliza el siguiente comando:
+
+   npx webpack --mode=development
+
+Este comando compilará tus módulos en un archivo llamado `bundle.js` en la carpeta `dist`.
+
+
+4: Incluir en tu HTML
+
+En tu archivo HTML, incluye el archivo `bundle.js` generado por Webpack:
+
+   <script src="dist/bundle.js"></script>
+
+Paso 5: Ejecutar tu proyecto
+
+Abre tu página HTML en un navegador y verifica que todo funcione como se esperaba.
+
+
+
