@@ -1,0 +1,32 @@
+@use "../base/variables" as v;
+.notifications-list {
+  .profile i.material-icons {
+    font-size: 2rem;
+    padding: 2rem;
+    color: v.$color-blanco;
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover {
+      transform: scale(1.3);
+    }
+  }
+  .profile {
+    width: 4rem;
+    height: 4rem;
+    background-color: v.$color-secundario;
+  }
+  li span {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-size: 1.6rem;
+  }
+}
+
+body.dark .notifications-list {
+  .profile i.material-icons {
+    color: v.$color-principal;
+  }
+  .profile {
+    background-color: v.$color-gris;
+  }
+}
