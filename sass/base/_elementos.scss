@@ -61,6 +61,7 @@ button:hover {
 
 body.dark {
   background-color: v.$color-bg-dark;
+  transition: background-color 0.5s;
   h1,
   h2 {
     color: v.$color-principal;
@@ -94,4 +95,36 @@ body.dark {
   select {
     border: 0.1rem solid v.$color-gris;
   }
+}
+
+.right-container {
+  ::-webkit-scrollbar {
+    background-color: v.$color-blanco;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: v.$color-secundario;
+  }
+  ::-webkit-scrollbar {
+    width: 1.8rem;
+    border: 0.1rem solid v.$color-secundario;
+  }
+}
+
+body.dark .right-container {
+  ::-webkit-scrollbar {
+    background-color: v.$color-negro;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: v.$color-principal;
+  }
+  ::-webkit-scrollbar {
+    width: 1.8rem;
+    border: 0.1rem solid v.$color-principal;
+  }
+}
+
+select {
+  appearance: none;
+  outline: none;
+  cursor: pointer;
 }
