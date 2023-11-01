@@ -12,8 +12,9 @@
   @include m.grid-columns(2, 0);
   border: 0.1rem solid v.$color-gris-claro;
   padding: 2rem;
-  width: 85%;
-  height: 45rem;
+  width: 100%;
+  height: 50rem;
+  margin: 1rem 5rem;
 }
 
 body.dark .container-project {
@@ -49,7 +50,7 @@ body.dark .container-project {
 }
 
 .create-project {
-  margin-left: 1rem;
+  margin: 0 auto;
   .material-icons {
     color: v.$color-secundario;
     font-size: 14.5rem;
